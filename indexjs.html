@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript and HTML</title>
+    <meta charset="utf-8"></meta>
+    <script defer src="myScript.js"> </script>
+    <style>
+      #myDiv, button {
+        font-size:150%;
+      }
+      input {
+        font-size: 125%;
+      }
+    </style>
+    </head>
+    <body>
+      <div id="myDiv">
+        <p>
+          <label for = "fname"> First Name:</label>
+          <input id="fname" name="fname" type="text" />
+          <br />
+          <label for = "lname">Last Name:</label>
+          <input id="lname" name="lname" type="text" />
+          <br />
+          <label for='work'>Does this work?</label>
+          <input id ='work' name='work' type='checkbox' onClick='boxClick()' />
+          <br />
+
+          Feel the Spirit of Radio?
+          <ul>
+            <li>
+              <label for="spiritYes"><Yes></label>
+              <input id='spiritYes' name='spirit' type='radio' />
+            </li>
+          </ul>
+        </p>
+
+
+    </body>
+</html>
