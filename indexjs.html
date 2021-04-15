@@ -17,23 +17,32 @@
       <div id="myDiv">
         <p>
           <label for = "fname"> First Name:</label>
-          <input id="fname" name="fname" type="text" />
+          <input id="fname" name="fname" type="text" onmouseover='myMouseOver("fname")'
+          onmouseout= 'myMouseOut("fname")' />
           <br />
           <label for = "lname">Last Name:</label>
-          <input id="lname" name="lname" type="text" />
+          <input id="lname" name="lname" type="text" onmouseover='myMouseOver("lname")'
+          onmouseout= 'myMouseOut("lname")'/>
           <br />
           <label for='work'>Does this work?</label>
-          <input id ='work' name='work' type='checkbox' onClick='boxClick()' />
+          <input id ='work' name='work' type='checkbox' onClick='boxClick()'
+          onmouseover= 'myMouseOver("work")' onmouseout= 'myMouseOut("work")' />
           <br />
 
           Feel the Spirit of Radio?
           <ul>
             <li>
-              <label for="spiritYes"><Yes></label>
-              <input id='spiritYes' name='spirit' type='radio' />
+              <label for="spiritYes">Yes</label>
+              <input id='spiritYes' name='spirit' type='radio' value= 'Yes' />
+            </li>
+            <li>
+              <label for ="spiritNo">No</label>
+              <input id = 'spiritNo' name='spirit' type='radio' value='No' />
             </li>
           </ul>
         </p>
+        <button onClick='myClick()'>I'm a button, click me!</button>
+      </div>
 
 
     </body>
